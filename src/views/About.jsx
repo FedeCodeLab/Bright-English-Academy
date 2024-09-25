@@ -2,7 +2,7 @@ export default function About() {
   return (
     <div
       className="bg-cover bg-center h-screen"
-      style={{ backgroundImage: "url('../../images/bg2.jpg')" }}
+      style={{ backgroundImage: "url('../../public/images/bg2.jpg')" }}
     >
       <div className="bg-black bg-opacity-50 h-full flex flex-col justify-center items-center text-white p-4">
         <div className="w-[90%] mx-auto flex flex-col justify-center items-center">
