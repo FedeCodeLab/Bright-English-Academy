@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Hamburguesa from "../icons/hamburguesa";
+
 import { Link } from "react-router-dom";
 import {
   Modal,
@@ -71,9 +71,7 @@ export default function Header() {
           </Link>
 
           <button className="md:hidden" onClick={handleMenuToggle}>
-            <span className="material-icons">
-              <Hamburguesa />
-            </span>
+            <span className="material-icons">menu</span>
           </button>
 
           <nav className="hidden md:flex gap-3 font-medium text-violet-700 items-center">
