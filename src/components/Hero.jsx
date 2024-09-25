@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function Hero() {
   return (
     <div
@@ -14,9 +16,12 @@ export default function Hero() {
             Aprende de manera fácil y efectiva con nuestros cursos
             personalizados, diseñados para ti.
           </p>
-          <button className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">
+          <Link
+            to="/about"
+            className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded"
+          >
             Saber más
-          </button>
+          </Link>
         </div>
       </div>
     </div>
