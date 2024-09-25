@@ -1,4 +1,4 @@
-Bright English Academy - Landing Page
+# Bright English Academy - Landing Page
 Este proyecto es una landing page creada como parte de una práctica de desarrollo web utilizando React y Vite. La landing page está diseñada para una academia de inglés ficticia llamada "Bright English Academy", con el objetivo de poner en práctica habilidades relacionadas con React Router, Vite, y despliegue en Vercel.
 
 Descripción
@@ -15,49 +15,6 @@ Vite: Herramienta de construcción rápida para proyectos web modernos.
 React Router: Biblioteca de enrutamiento para manejar la navegación entre páginas.
 Tailwind CSS: Framework de CSS para crear estilos de manera eficiente.
 Vercel: Plataforma de despliegue para aplicaciones web front-end.
-Estructura del Proyecto
-bash
-Copiar código
-.
-├── public
-│   └── images
-├── src
-│   ├── components
-│   │   ├── Hero.jsx
-│   │   ├── Cards.jsx
-│   │   ├── LittleAbout.jsx
-│   │   └── Opinions.jsx
-│   ├── views
-│   │   ├── Professors.jsx
-│   │   ├── About.jsx
-│   │   └── NotFound.jsx
-│   ├── App.jsx
-│   └── main.jsx
-├── package.json
-├── tailwind.config.js
-└── vite.config.js
-Instalación y Configuración
-Clona el repositorio en tu máquina local:
-
-bash
-Copiar código
-git clone https://github.com/tuusuario/nombre-del-repositorio.git
-Navega a la carpeta del proyecto:
-
-bash
-Copiar código
-cd nombre-del-repositorio
-Instala las dependencias:
-
-bash
-Copiar código
-npm install
-Inicia el servidor de desarrollo:
-
-bash
-Copiar código
-npm run dev
-Abre tu navegador y ve a http://localhost:5173 para ver el proyecto.
 
 Despliegue
 El proyecto está desplegado en Vercel y puede ser accesado en el siguiente enlace:
