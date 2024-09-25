@@ -10,6 +10,8 @@ import {
   useDisclosure,
 } from "@nextui-org/react";
 import Confetti from "react-confetti";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export default function Header() {
   const { isOpen, onOpen, onOpenChange } = useDisclosure();
@@ -36,6 +38,16 @@ export default function Header() {
     setError("");
     onOpenChange();
 
+    toast.success("Solicitud enviada correctamente", {
+      position: "bottom-right",
+      autoClose: 3000,
+    });
+
+    // Restablecer los campos del formulario
+    setName("");
+    setEmail("");
+    setCourse("");
+
     setTimeout(() => {
       setConfetti(false);
     }, 5000);
@@ -44,6 +56,7 @@ export default function Header() {
   return (
     <>
       {confetti && <Confetti />}
+      <ToastContainer />
       <header className="border-b bg-white py-6 shadow-lg">
         <div className="w-[90%] mx-auto flex justify-between items-center">
           <Link to="/">
