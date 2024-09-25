@@ -6,13 +6,14 @@ import "./index.css";
 import Header from "./components/Header.jsx";
 import Footer from "./components/Footer.jsx";
 import { NextUIProvider } from "@nextui-org/react";
+import HeaderMobile from "./components/HeaderMobile.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <BrowserRouter>
       <NextUIProvider>
         <div className="bg-zinc-100 relative">
-          <Header />
+          <HeaderMobile />
           <div className="min-h-screen">
             <App />
           </div>

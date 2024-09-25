@@ -56,7 +56,7 @@ export default function Header() {
     <>
       {confetti && <Confetti />}
       <ToastContainer />
-      <header className="border-b bg-white py-6 shadow-lg sticky top-0 z-10">
+      <header className="border-b bg-white py-6 shadow-lg sticky top-0 z-10 hidden md:block">
         <div className="w-[90%] mx-auto flex justify-between items-center">
           <Link to="/">
             <h3 className="text-xl font-semibold text-violet-700 transform hover:scale-105">
