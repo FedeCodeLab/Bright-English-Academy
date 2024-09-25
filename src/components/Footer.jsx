@@ -1,7 +1,7 @@
 export default function Footer() {
   return (
     <footer className="bg-indigo-950 text-zinc-300 py-16">
-      <div className="w-[90%] mx-auto flex flex-col items-center justify-center gap-2">
+      <div className="w-[90%] mx-auto flex flex-col items-center justify-center gap-2 text-center">
         <p className="">
           Hecho con React por Federico Pablo Guzmán · Todos los derechos
           reservados.
