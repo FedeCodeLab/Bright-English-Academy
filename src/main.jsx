@@ -11,7 +11,7 @@ createRoot(document.getElementById("root")).render(
   <StrictMode>
     <BrowserRouter>
       <NextUIProvider>
-        <div className="bg-zinc-100">
+        <div className="bg-zinc-100 relative">
           <Header />
           <div className="min-h-screen">
             <App />
