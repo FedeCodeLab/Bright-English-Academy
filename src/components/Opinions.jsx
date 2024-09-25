@@ -1,16 +1,58 @@
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+
+import { Navigation, Pagination, Autoplay } from "swiper/modules";
+
 export default function Opinions() {
   return (
     <div className="w-[90%] mx-auto">
-      <p>
-        En Bright English Academy, nos dedicamos a ayudar a estudiantes de todos
-        los niveles a alcanzar la fluidez en inglés. Con planes de aprendizaje
-        personalizados, instructores experimentados y clases en línea dinámicas,
-        aprender inglés nunca ha sido tan efectivo y divertido. Ya sea que estés
-        preparándote para exámenes, mejorando tus habilidades profesionales o
-        simplemente buscando comunicarte mejor, te ofrecemos las herramientas y
-        el apoyo necesarios para que alcances el éxito. ¡Únete a nosotros y abre
-        las puertas a nuevas oportunidades a través del idioma!
-      </p>
+      <Swiper
+        modules={[Pagination, Navigation, Autoplay]}
+        spaceBetween={50}
+        slidesPerView={1}
+        loop={true}
+        autoplay={{ delay: 4000, disableOnInteraction: false }}
+        pagination={{ clickable: true }}
+        navigation={false}
+      >
+        <SwiperSlide>
+          <div className="flex flex-col justify-center items-center h-[300px] text-center p-8">
+            <p className="text-2xl text-zinc-700 font-light">
+              “Mejoré mis habilidades en inglés rápidamente gracias a la
+              plataforma. ¡Totalmente recomendable!”
+            </p>
+            <span className="mt-4 text-zinc-600 font-semibold">
+              — Laura Gómez
+            </span>
+          </div>
+        </SwiperSlide>
+
+        <SwiperSlide>
+          <div className="flex flex-col justify-center items-center h-[300px] text-center p-8">
+            <p className="text-2xl text-zinc-700 font-light">
+              “El curso personalizado se ajustó perfectamente a mis necesidades.
+              ¡Muy recomendable!”
+            </p>
+            <span className="mt-4 text-zinc-600 font-semibold">
+              — Carlos Herrera
+            </span>
+          </div>
+        </SwiperSlide>
+
+        <SwiperSlide>
+          <div className="flex flex-col justify-center items-center h-[300px] text-center p-8">
+            <p className="text-2xl text-zinc-700 font-light">
+              “Gané confianza para hablar inglés gracias a las clases dinámicas.
+              ¡Excelentes resultados!”
+            </p>
+            <span className="mt-4 text-zinc-600 font-semibold">
+              — Sofía Martínez
+            </span>
+          </div>
+        </SwiperSlide>
+      </Swiper>
     </div>
   );
 }
