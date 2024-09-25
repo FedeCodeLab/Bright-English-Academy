@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Hamburguesa from "../icons/hamburguesa";
+import Hamburguesa from "../icons/Hamburguesa";
 import { Link } from "react-router-dom";
 import {
   Modal,
