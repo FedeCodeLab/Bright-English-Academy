@@ -6,6 +6,7 @@ import LittleAbout from "./components/LittleAbout";
 import Opinions from "./components/Opinions";
 import Professors from "./views/Professors";
 import About from "./views/About";
+import NotFound from "./views/NotFound";
 
 function App() {
   return (
@@ -21,9 +22,9 @@ function App() {
           </main>
         }
       />
-
       <Route path="/professors" element={<Professors />} />
       <Route path="/about" element={<About />} />
+      <Route path="*" element={<NotFound />} />
     </Routes>
   );
 }
