@@ -7,7 +7,7 @@ import { Navigation, Pagination, Autoplay } from "swiper/modules";
 
 export default function Opinions() {
   return (
-    <div className="w-[90%] mx-auto">
+    <div className="w-[90%] mx-auto pb-6">
       <Swiper
         modules={[Pagination, Navigation, Autoplay]}
         spaceBetween={50}

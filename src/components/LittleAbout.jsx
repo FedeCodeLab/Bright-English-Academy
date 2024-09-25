@@ -1,8 +1,8 @@
 export default function LittleAbout() {
   return (
-    <section className="bg-indigo-600 text-white py-28">
+    <section className="bg-indigo-800 text-white py-28">
       <div className="w-[90%] mx-auto">
-        <p className="text-lg">
+        <p className="text-lg  text-center">
           En Bright English Academy, nos dedicamos a ayudar a estudiantes de
           todos los niveles a alcanzar la fluidez en inglés. Con planes de
           aprendizaje personalizados, instructores experimentados y clases en

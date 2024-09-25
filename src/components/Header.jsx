@@ -6,6 +6,7 @@ export default function Header() {
         <nav className="flex gap-3 font-medium text-violet-700 items-center">
           <a href="#">Home</a>
           <a href="#">Nosotros</a>
+          <a href="#">Profesores</a>
           <button className="text-white bg-violet-700 py-2 px-4 rounded-lg">
             Inscribirse
           </button>
